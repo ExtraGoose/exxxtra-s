@@ -1,0 +1,125 @@
+/* ВЫПАДАЮЩЕЕ МЕНЮ */
+.menu {
+    order: 999;
+    margin-left: auto;
+    user-select: none;
+}
+
+.menu-btn {
+    padding: 12px 18px;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    min-width: 10vw;
+    font-size: large;
+    position: relative;
+    float: right;
+}
+
+.menu-btn.active {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.menu-items {
+    display: none;
+    width: 100%;
+    left: 0;
+    border-radius: 15px 0px 15px 15px;
+    border-top: none;
+    overflow: hidden;
+}
+
+.menu-items button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}
+
+.menu.show .menu-items {
+    display: block;
+}
+
+.header-text {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 15px;
+    min-width: 10vw;
+    font-size: large;
+    position: relative;
+}
+
+.header-header {
+    padding: 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    min-width: 10vw;
+    font-size: large;
+    position:relative;
+    margin-left: auto;
+}
+
+.header-hide {
+    padding: 10px 15px;
+    min-width: 10vw;
+    font-size: large;
+}
+
+.header-img {
+    max-width: 90px;
+    height: auto;
+    max-height: 95px;
+    border-radius: 13px;
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header {
+    border-top: 0;
+    border-radius: 0px 0px 30px 30px; /* Скругляем углы рамки у блока header */
+    margin: 17px; /* Добавим margin для создания внутренних отступов */
+    margin-top: auto;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+footer {
+    margin-top: auto;
+    border-bottom: 0;
+    border-radius: 30px 30px 0px 0px; /* Скругляем углы рамки у блока footer */
+    margin: 17px; /* Добавим margin для создания внутренних отступов */
+    margin-bottom: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px; /* Добавим закругление углов рамки */
+    padding: 20px; /* Уменьшим отступ для рамки вокруг блока */
+    margin: 25px; /* Добавим margin для создания внутренних отступов */
+    flex-direction: column;
+}
+
+.main-block-bottom {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: auto; /* меняем margin-bottom на margin-top и добавляем auto */
+}
