@@ -4,36 +4,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="screens.css">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
         <link rel="stylesheet" href="colorsmain.css"  id="styleSheet">
         <link rel="stylesheet" href="main.css">
-        <title>JustЭкстра</title>
+        <link rel="stylesheet" href="screens.css">
+        <title>топ страничка инета дамс</title>
     </head>
     <body>
         <header>
         <div class="menu">
             <button class="menu-btn" id="toggleButton">меню</button>
             <div class="menu-items">
-                <button class="menu-btn-1">главное</button>
-                <button class="menu-btn-2">экстра</button>
-                <button class="menu-btn-3">обо мне</button>
+                <a href="index.html"><button class="menu-btn-1">главное</button></a>
+                <a href="extra.html"><button class="menu-btn-1">экстра</button></a>
+                <a href="about.html"><button class="menu-btn-1">обо мне</button></a>
             </div>
         </div>
         <div class="header-header">
-            <div class="header-text">ГЛАВНАЯ ИНФА САЙТА</div>
-            <div class="header-hide" id="targetDiv" style="display: none;">ГЛАВНАЯ ИНФА САЙТА</div>
+            <div class="header-text">главная обитель Экстра-Гуся! :D</div>
+            <div class="header-hide" id="targetDiv" style="display: none;">также меня называют просто Гусём, Экстрой, а в реальности — Максимом <br><hr> вы не поверите, в паспорте написано что я — мужчина. <br><hr> сейчас я проживаю в России, в окрестностях промышленного городка — Перми. <br><hr> а ещё, вишенкой на торте, мне 16 лет; день рождения 8 февраля. </div>
         </div>
-        <img src="maincat.jpg" class="header-img" id="targetDiv2" onclick="toggleDarkMode()">
+        <img src="maincat.jpg" class="header-img" id="targetDiv2" onclick="toggleDarkMode()" draggable="false">
         
         </header>
 
         <main>
-            <div class="main-up">ВСЕМ ХАЙОУ ЭТО — ТЕЛО САЙТА</div>
+            <div class="main-up">
+                <p class="main-up-first">Здравствуйте, дорогие, зашедшие сюда люди!</p><br>
+                <p class="main-up-second">Я, как автор данной странички, очень признателен КАЖДОМУ, кто посетил её. Тут собрана информация обо мне, множество моих рассуждений по поводу разных вещей (<i>иногда в очень странной художественной форме, иногда просто бредовые, иногда просто небрежно-личные</i>). Я очень надеюсь, что всё это не попадёт в плохие руки, хотя, мне самому стоило бы 100500 раз подумать перед тем, как нажимать на кнопку "опубликовать".... <br> <br>Я много работал и не спал ночами, утрами, чтобы написать код этого сайта и собрать все свои мысли воедино, чтобы его заполнить, поэтому я очень сильно надеюсь, что мой труд будет оценён (<i><small>хотя нет, я не хочу, проваливайте отсюда!!!!!!!!</small></i>) <br><br> Мне иногда кажется, что сколько я бы раз не писал своеобразные "приветствия" где-бы не было, это всегда выходит каким-то шлаком -_- <br><br>Что ж-ж-ж-ж, всё же я действительно пожелаю вам удачи отыскать тут всё самое сокровенное, пока я могу позволить себе не удалять это.... К ЧЁРТУ! :/ </p>
+            </div>
             <div class="main-block-bottom">ВСЕМ ХАЙОУ ЭТО — НИЗ МЕЙНА</div>
         </main>
 
         <footer>
-            <div>ВСЕМ ХАЙОУ ЭТО — НОЖКИ САЙТА</div>
+            <div class="footer-up">ВСЕМ ХАЙОУ ЭТО — НОЖКИ САЙТА</div>
         </footer>
         <script src="main.js"></script>
     </body>

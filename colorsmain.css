@@ -1,3 +1,15 @@
+::selection {
+
+    background: #b8b8b8;
+    
+}
+    
+::-moz-selection {
+    
+    background: #b8b8b8;
+    
+}
+
 .menu-btn {
     border: 4px solid rgb(94, 94, 94);
     border-bottom: none;
@@ -35,7 +47,6 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
     border: 1px solid #333;
     background-color: #f0f0f0;
 }
@@ -51,4 +62,14 @@ main {
 
 .main-block-bottom {
     border: 1px solid #333;
+    background-color: #ebebeb;
 }
+
+.main-up-first {
+    background-color: #eeeeee;
+    border: 3px dotted #969696;
+}
+
+hr {
+    background-color: rgb(167, 164, 164);
+  }
