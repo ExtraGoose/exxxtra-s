@@ -33,6 +33,9 @@
 .header-img {
     filter: invert(100%);
 }
+.main-bottom-img {
+    filter: invert(100%);
+}
 
 .header-header {
     background-color: #252525;
@@ -65,12 +68,11 @@ main {
 
 .main-block-bottom {
     border: 1px solid #a0a0a0;
-    background-color: #383838;
 }
 
 .main-up-first {
     background-color: #3a3a3a;
-    border: 3px dotted #1d1d1d;
+    border: 3px dotted #b8b8b8;
 }
 
 hr {
