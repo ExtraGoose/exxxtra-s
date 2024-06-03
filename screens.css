@@ -18,13 +18,31 @@
   }
   .main-up-first {
     text-align: center;
+    font-size: larger;
 }
 
 .main-up-second {
     margin-left: 1vw;
     margin-top: auto;
-    font-size: larger;
+    font-size: large;
 }
+.main-up-second-bottom {
+  font-size: large;
+}
+.main-tablehopper-svg {
+  max-width: 12vh;
+}
+.main-tablehopper-first {
+  margin-top: 6.5vh;
+}
+.main-tablehopper-second {
+  margin-top: 23vh;
+  margin-left: 14vh;
+}
+.main-tablehopper-thirth {
+  margin-top: 9.5vh;
+}
+
   }
   
 
@@ -51,12 +69,19 @@ body {
 .main-up-second {
   font-size: larger;
 }
+
+.main-up-second-bottom {
+  font-size: larger;
+}
 .main-up {
   margin-left: 3%;
 }
 
 .header-header {
   margin:auto;
+}
+.main-tablehopper-svg {
+  margin-left: 3vh;
 }
 }
 

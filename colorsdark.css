@@ -17,12 +17,20 @@
     color: #161616;
 }
 
+.menu-btn:hover {
+    text-decoration: underline 1.6px wavy #808080;
+}
+
 .menu-items {
     background-color: #d4d4d4;
 }
 
 .menu-items button {
     color: #181818;
+}
+
+.menu-items button:hover {
+    text-decoration: underline 1.6px wavy #808080;
 }
 
 .header-text {
@@ -34,6 +42,9 @@
     filter: invert(100%);
 }
 .main-bottom-img {
+    filter: invert(100%);
+}
+.main-tablehopper-svg {
     filter: invert(100%);
 }
 
@@ -78,3 +89,59 @@ main {
 hr {
     background-color: rgb(85, 85, 85);
   }
+
+.footer-down {
+    color:#ff2e2e;
+    font-size: small;
+    letter-spacing: 0.2vw;
+}
+
+.mail-button {
+    background-color: #181818;
+    color: #f8f8f8;
+}
+
+.a-social-links {
+    color: #f8f8f8;
+}
+
+.a-social-links-tg {
+    background-color:#51888a;
+    padding: 7px;
+}
+
+.a-social-links-vk {
+    background-color:#2e4653;
+    padding: 7px;
+}
+
+.a-social-links-ds {
+    background-color:rgb(71, 117, 85);
+    padding: 7px;
+}
+
+.a-social-links-fb {
+    background-color:rgb(134, 109, 78);
+    padding: 7px;
+}
+
+.a-social-links-ml {
+    background-color:#804a4a;
+    padding: 7px;
+}
+
+.a-social-links-fb:hover {
+    text-decoration: underline 2px wavy #f8f8f8;
+}
+
+.a-social-links-vk:hover {
+    text-decoration: underline 2px wavy #f8f8f8;
+}
+
+.a-social-links-tg:hover {
+    text-decoration: underline 2px wavy #f8f8f8;
+}
+
+.main-tablehopper-first-c, main-tablehopper-second-c, main-tablehopper-thirth-c {
+    color: #f8f8f8;
+}

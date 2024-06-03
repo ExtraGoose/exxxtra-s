@@ -17,12 +17,20 @@
     color: #fff;
 }
 
+.menu-btn:hover {
+    text-decoration: underline 1.6px wavy #8d8d8d;
+}
+
 .menu-items {
     background-color: #333;
 }
 
 .menu-items button {
     color: #fff;
+}
+
+.menu-items button:hover {
+    text-decoration: underline 1.6px wavy #8d8d8d;
 }
 
 .header-text {
@@ -72,3 +80,56 @@ main {
 hr {
     background-color: rgb(167, 164, 164);
   }
+
+.footer-down {
+    color:#ad0000;
+}
+.mail-button {
+    background-color:#ffffff;
+    color: #000000;
+}
+
+.a-social-links {
+    color: #000000;
+}
+
+.a-social-links-tg {
+    background-color:#a4eff1;
+    padding: 7px;
+}
+
+.a-social-links-vk {
+    background-color:#90c9eb;
+    padding: 7px;
+}
+
+.a-social-links-ds {
+    background-color:rgb(151, 238, 177);
+    padding: 7px;
+}
+
+.a-social-links-fb {
+    background-color:rgb(252, 219, 178);
+    padding: 7px;
+}
+
+.a-social-links-ml {
+    background-color:#f5a5a5;
+    padding: 7px;
+}
+
+.a-social-links-tg:hover {
+    text-decoration: underline 1.6px wavy #000000;
+}
+
+.a-social-links-vk:hover {
+    text-decoration: underline 1.6px wavy #000000;
+}
+
+.a-social-links-fb:hover {
+    text-decoration: underline 1.6px wavy #000000;
+}
+
+.main-tablehopper-first-c, main-tablehopper-second-c, main-tablehopper-thirth-c {
+    color: #000000;
+}
