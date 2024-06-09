@@ -39,10 +39,14 @@
 }
 
 .header-header {
-    background-color: #dfdfdf;
+    background-color: #dfdfdf;                
     color: #fff;
     border:#161616;
     border: 1px solid #161616;
+}
+
+.work-block {
+    border: 2px solid black;
 }
 
 .header-hide {
@@ -52,6 +56,10 @@
 body {
     background-color: #ffffff;
     color: #000000;
+}
+
+.neromybeloved-img {
+    filter: invert(100%);
 }
 
 header {
@@ -73,6 +81,11 @@ main {
 }
 
 .main-up-first {
+    background-color: #eeeeee;
+    border: 3px dotted #969696;
+}
+
+.main-up-first-right {
     background-color: #eeeeee;
     border: 3px dotted #969696;
 }
@@ -132,4 +145,16 @@ hr {
 
 .main-tablehopper-first-c, main-tablehopper-second-c, main-tablehopper-thirth-c {
     color: #000000;
+}
+
+.work-block-mark-1 {
+    border: 2px solid #000000;
+}
+
+.work-block-mark-2 {
+    border: 2px solid #000000;
+}
+
+.work-block-mark-3 {
+    border: 2px solid #000000;
 }

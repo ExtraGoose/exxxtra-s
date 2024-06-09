@@ -19,6 +19,11 @@
   .main-up-first {
     text-align: center;
     font-size: larger;
+    padding: 7px;
+}
+.main-up-first-right {
+  text-align: center;
+  font-size: larger;
 }
 
 .main-up-second {
@@ -42,7 +47,27 @@
 .main-tablehopper-thirth {
   margin-top: 9.5vh;
 }
-
+.neromybeloved-img {
+  width: 32.5vw;
+  margin: 0 auto;
+  margin-left: 1vw;
+}
+.work-block {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.main-bottom-img {
+  max-width:60vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.main-footer-special {
+  margin-top: 12vw;
+}
+footer {
+  margin-top: 0px;
+}
   }
   
 
@@ -66,6 +91,12 @@ body {
   padding-left: 11px;
   margin-right: 50%;
 }
+
+.main-up-first-right {
+  padding: 7px;
+  padding-left: 11px;
+  margin-right: 50%;
+}
 .main-up-second {
   font-size: larger;
 }
@@ -83,6 +114,26 @@ body {
 .main-tablehopper-svg {
   margin-left: 3vh;
 }
+.neromybeloved-img {
+  width: 25vw;
+  padding: 7px;
+  padding-left: 11px;
+}
+.work-block {
+  margin-right: 18vw;
+}
+.main-bottom-img {
+  max-width:30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.main-footer-special {
+  margin-top: 12vw;
+}
+footer {
+  margin-top: 0px;
+}
 }
 
 /* БОЛЬШИЕ МОНИКИ */
@@ -91,13 +142,29 @@ body {
     margin-left: 7vw;
     margin-right: 7vw;
   }
-  .main-block-bottom {
-    margin-left: 8vw;
-    margin-right: 8vw;
-  }
   .footer-up {
     margin-left: 8vw;
     margin-right: 8vw;
+  }
+  .neromybeloved-img {
+    width: 25vw;
+    padding: 7px;
+    padding-left: 11px;
+  }
+  .work-block {
+    margin-right: 16vw;
+  }
+  .main-bottom-img {
+    max-width:20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .main-footer-special {
+    margin-top: 12vw;
+  }
+  footer {
+    margin-top: 0px;
   }
   }
   

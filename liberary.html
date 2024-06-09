@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="colorsmain.css"  id="styleSheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="screens.css">
+        <title>поисковой завет</title>
+    </head>
+    <body>
+        <header>
+        <div class="menu">
+            <button class="menu-btn" id="toggleButton">меню</button>
+            <div class="menu-items">
+                <a href="index.html"><button class="menu-btn-1">главное</button></a>
+                <a href="extra.html"><button class="menu-btn-1">экстра</button></a>
+                <a href="about.html"><button class="menu-btn-1">обо мне</button></a>
+            </div>
+        </div>
+        <div class="header-header">
+            <div class="header-text">осознанно выкладываем тут вещи :0</div>
+            <div class="header-hide" id="targetDiv" style="display: none;">обожаем читать и смотреть, а писать-то как любим!<br><hr> фанфики, рассказы и странные пьесы — <br><hr> ...всё это будет ожидать тут Вашего взора :' <br><hr> В общем, тут мы фабрикуем своё творчество :3 </div>
+        </div>
+        <img src="maincat.jpg" class="header-img" id="targetDiv2" onclick="toggleDarkMode()" draggable="false">
+        
+        </header>
+
+        <main>
+            <div class="main-up">
+                <p class="main-up-first">Поговаривают, недавно они снова вернулись к своей монотонной, богом позабытой работе :0 </p><br>
+                <p class="main-up-second">Сборник всего, что можно почитать, находится ниже. <br>
+                        <div class="work-block">
+                             <img src="parkvlesy.png" class="work-block-img" draggable="false">
+                             <div class="work-block-title">Жизни хоровод</div>
+                             <div class="work-block-desc">Проза о странности чуда и сумашествия</div>
+                             <div class="work-marks-and-btn-cont">
+                                <div class="work-block-marks"><span class="work-block-mark-1">Бред </span><span class="work-block-mark-2">Переживания </span><span class="work-block-mark-3">Лирика </span></div> 
+                                <div class="work-block-btn"><button class="work-block-btn-inside"><a href="index.html"><img class="work-block-btn-inside-img" src="click-clack.png"></a></button></div>
+                             </div>
+                        </div>
+
+                        <br>
+                    </p>
+            </div>
+        </main>
+
+        <main class="main-footer-special">
+            <div class="main-block-bottom" style="border: none;"><img draggable="false" class="main-bottom-img" src="maintreesyay2.png"></div><small style="text-align: center;">не подходи</small>
+        </main>
+
+        <footer>
+            <div class="footer-up" style="user-select: none;"><img class="footer-img" draggable="false" src="extraphoto.png">— хайпомоллекула, 2024</div><br>
+            <div class="footer-down">содержит контент с побочными эффектами <big>! ! !</big></div>
+            
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
+

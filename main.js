@@ -82,6 +82,3 @@ window.onload = function() {
         stylesheet.setAttribute('href', 'colorsdark.css');
     }
 };
-
-//Кнопка вывода поля "почта" при клике
-
