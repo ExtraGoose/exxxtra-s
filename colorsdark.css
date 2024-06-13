@@ -65,7 +65,7 @@
 }
 
 .work-block-img {
-    filter: invert(90%);
+    filter: invert(100%);
 }
 
 .header-header {
@@ -171,6 +171,11 @@ hr {
     color: #f8f8f8;
 }
 
+.work-block {
+    background-color: rgb(014, 014, 014);
+    color: #f8f8f8;
+}
+
 .work-block-mark-1 {
     border: 2px solid #f8f8f8;
 }
@@ -189,6 +194,11 @@ hr {
 }
 
 .work-block-colormark {
+    background-color: #494949;
+    color: #f8f8f8;
+}
+
+.work-block-colormark-2 {
     background-color: #494949;
     color: #f8f8f8;
 }

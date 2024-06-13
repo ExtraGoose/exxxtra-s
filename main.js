@@ -83,7 +83,7 @@ window.onload = function() {
     }
 };
 
-const openBtn = document.querySelector('.work-block-colormark');
+  const openBtn = document.querySelector('.work-block-colormark');
   const popupwindowbtn = document.querySelector('#popupwindowbtn');
   const popup = document.querySelector('#popup');
 
@@ -94,3 +94,14 @@ const openBtn = document.querySelector('.work-block-colormark');
   popupwindowbtn.addEventListener('click', () => {
     popup.style.display = 'none';
   });
+
+const zipimager = document.getElementById('zip-image');
+const zipimagechanger = document.getElementById('zip-image-change');
+
+zipimagechanger.addEventListener('click', () => {
+    if (zipimager.src.includes('nsfw-ziploosinghermind.png')) {
+      zipimager.src = 'sfw-ziploosinghermind.png';
+    } else {
+      zipimager.src = 'nsfw-ziploosinghermind.png';
+    }
+});

@@ -147,6 +147,11 @@ hr {
     color: #000000;
 }
 
+.work-block {
+    background-color: rgb(240, 240, 240);
+    color: #000000;
+}
+
 .work-block-mark-1 {
     border: 2px solid #000000;
 }
@@ -164,6 +169,11 @@ hr {
     border: 4px solid black;
 }
 .work-block-colormark {
-    background-color: #e7e7e7;
+    background-color: #dbdbdb;
+    color: #000000;
+}
+
+.work-block-colormark-2 {
+    background-color: #dbdbdb;
     color: #000000;
 }

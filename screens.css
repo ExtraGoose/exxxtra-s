@@ -1,7 +1,7 @@
 /* МОБИЛЫ */
 @media screen and (max-width: 768px) {
     body {
-      font-size: 1rem; /* Уменьшаем размер шрифта на маленьких экранах */
+      font-size: 1.2rem; /* Уменьшаем размер шрифта на маленьких экранах */
     }
     .header-header {
       margin-bottom: 15px;
@@ -29,7 +29,7 @@
 .main-up-second {
     margin-left: 1vw;
     margin-top: auto;
-    font-size: large;
+    font-size: 1.1em;
 }
 .main-up-second-bottom {
   font-size: large;

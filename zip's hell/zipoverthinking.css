@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Handmew";
+    font-style: normal;
+    font-weight: 400;
+    src: url(Pangolin-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: large;
+    font-family:Handmew;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); 
+    color: white;
+    z-index: 99999999;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-img-crazy {
+    position: absolute;
+    z-index: -100000;
+    width: 50vw;
+    height: 100%;
+}
+
+.header-block {
+    font-size: x-large;
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+}
+
+.main-block {
+    font-size: larger;
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+}
+
+.footer-block {
+    font-size: large;
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+}
+
+.alt-rightedall {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Начальное положение за пределами экрана */
+    width: 290px;
+    height: 73%;
+    background-color: #f0f0f0;
+    transition: right 0.3s; /* Анимация смещения */
+    transform: skewX(10deg);
+    transform: rotateZ(11deg);
+    margin-top: 10vw;
+    margin-right: 11%;
+}
+
+.alt-rightedall.active {
+    right: 0; /* Смещение для показа меню */
+}
+
+.rightedallbtn {
+    display: block;
+    width: 100%;
+    height: 100px;
+
+}
+
+.main-img-crazy {
+    min-width: 100%;
+
+}
+
+
+
+
+
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    animation: fly 5s infinite linear, shake 0.1s infinite alternate;
+}
+
+@keyframes fly {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(-25deg);
+    }
+    to {
+        transform: rotate(2deg);
+    }
+}
+
+
+.savebtn {
+    animation: rainbow 2s infinite, expandShrink 4s infinite;
+    text-align: center;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+@keyframes expandShrink {
+    0%, 100% { transform: scaleX(1); }
+    25%, 75% { transform: scaleX(2); }
+    50% { transform: scaleY(2); }
+}
+
+@keyframes toggleVisibility {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}

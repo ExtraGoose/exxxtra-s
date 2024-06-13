@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: "Handmew";
+    font-style: normal;
+    font-weight: 400;
+    src: url(Pangolin-Regular.ttf);
+}
+
+* {
+    font-family: Handmew;
+}
 
 /* ВЫПАДАЮЩЕЕ МЕНЮ */
 .menu {
@@ -12,7 +22,7 @@
     border-radius: 15px 15px 15px 15px;
     cursor: pointer;
     min-width: 10vw;
-    font-size: large;
+    font-size: 1.02em;
     position: relative;
     float: right;
 }
@@ -37,7 +47,7 @@
     text-align: left;
     border: none;
     background-color: transparent;
-    font-size: large;
+    font-size: 1.1em;
     cursor:pointer;
 }
 
@@ -50,7 +60,7 @@
     padding: 10px 15px;
     border-radius: 15px 15px 15px 15px;
     min-width: 10vw;
-    font-size: large;
+    font-size: 1.1em;
     position: relative;
 }
 
@@ -58,7 +68,6 @@
     padding: 15px 15px;
     border-radius: 15px 15px 15px 15px;
     min-width: 10vw;
-    font-size: large;
     position:relative;
     margin-left: auto;
 }
@@ -66,7 +75,7 @@
 .header-hide {
     padding: 10px 15px;
     min-width: 10vw;
-    font-size: large;
+    font-size: 1em;
 }
 
 .header-img {
@@ -230,11 +239,11 @@ details > summary::marker {
 .text-in-ramka {
     margin-left: 2vw;
     margin-right: 4vw;
-    font-size: small;
+    font-size: medium;
     text-align: center;
     line-height: 17px;
     border: 1.3px solid rgb(122, 122, 122);
-    padding: 6px;
+    padding: 10px;
     border-radius: 15px;
 }
 
@@ -265,7 +274,7 @@ details > summary::marker {
 
 .work-block-title {
     margin: 5px;
-    font-size: larger;
+    font-size: 1.2em;
     margin-left: 13px;
 }
 
@@ -273,7 +282,7 @@ details > summary::marker {
     margin: 5px;
     margin-left: 13px;
     line-height: 3vh;
-    font-size: medium;
+    font-size: 1.07em;
     margin-bottom: 15px;
 }
 
@@ -291,26 +300,26 @@ details > summary::marker {
 
 .work-block-mark-1 {
     border-radius: 8px;
-    padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
+    font-size: 1.02em;
 }
 
 .work-block-mark-2 {
     border-radius: 8px;
-    padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
+    font-size: 1.02em;
 }
 
 .work-block-mark-3 {
     border-radius: 8px;
-    padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
+    font-size: 1.02em;
 }
 
 .work-block-btn {
@@ -337,15 +346,6 @@ details > summary::marker {
   flex-flow:nowrap;
 }
 
-.work-block-colormark {
-    position: absolute;
-    margin: 7px;
-    padding: 6px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-
 .popup-window {
     display: none;
     position: fixed;
@@ -363,4 +363,33 @@ details > summary::marker {
     margin-left: 15px;
     margin-right: 15px;
     font-size: larger;
+}
+
+.work-block-colormark {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.work-block-colormark-2 {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.work-block-colormark-3 {
+    margin: 7px;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left:-2%;
 }
