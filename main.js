@@ -82,3 +82,15 @@ window.onload = function() {
         stylesheet.setAttribute('href', 'colorsdark.css');
     }
 };
+
+const openBtn = document.querySelector('.work-block-colormark');
+  const popupwindowbtn = document.querySelector('#popupwindowbtn');
+  const popup = document.querySelector('#popup');
+
+  openBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+  });
+
+  popupwindowbtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });

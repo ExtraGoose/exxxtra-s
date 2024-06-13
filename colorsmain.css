@@ -158,3 +158,12 @@ hr {
 .work-block-mark-3 {
     border: 2px solid #000000;
 }
+
+.popup-window {
+    background-color: #e6e6e6;
+    border: 4px solid black;
+}
+.work-block-colormark {
+    background-color: #e7e7e7;
+    color: #000000;
+}

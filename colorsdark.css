@@ -65,7 +65,7 @@
 }
 
 .work-block-img {
-    filter: invert(100%);
+    filter: invert(90%);
 }
 
 .header-header {
@@ -181,4 +181,14 @@ hr {
 
 .work-block-mark-3 {
     border: 2px solid #f8f8f8;
+}
+
+.popup-window {
+    background-color: #3f3f3f;
+    border: 4px solid rgb(240, 240, 240);
+}
+
+.work-block-colormark {
+    background-color: #494949;
+    color: #f8f8f8;
 }
