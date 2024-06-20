@@ -83,6 +83,9 @@ window.onload = function() {
     }
 };
 
+
+
+
   const openBtn = document.querySelector('.work-block-colormark');
   const popupwindowbtn = document.querySelector('#popupwindowbtn');
   const popup = document.querySelector('#popup');
@@ -94,6 +97,9 @@ window.onload = function() {
   popupwindowbtn.addEventListener('click', () => {
     popup.style.display = 'none';
   });
+
+  
+
 
 const zipimager = document.getElementById('zip-image');
 const zipimagechanger = document.getElementById('zip-image-change');

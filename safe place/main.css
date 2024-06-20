@@ -1,6 +1,221 @@
 @font-face {
-    font-family: "my";
+    font-family: "swamp";
     font-style: normal;
-    font-weight: 400;
-    src: url(my.ttf);
+    font-weight: normal;
+    src: url(swamp.ttf);
+}
+
+.block-to-showanddown {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeInAnimation 1.1s;
+}
+
+.fade-out {
+    animation: fadeOutAnimation 1.1s;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+.body {
+    background-color: rgb(180, 180, 180);
+}
+.main-block {
+    position: absolute;
+    display: block;
+    background-color: rgb(180, 180, 180);
+    min-height: 150%;
+    height: auto;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    border-left: 20px dashed rgb(88, 88, 88);
+}
+h1 {
+    margin-top: 1vw;
+    text-decoration: underline;
+    margin-left: 3vw;
+    font-size: 1.3em;
+}
+.direct-msg {
+    font-size:1.3em;
+    margin-top: 3vw;
+    color: white;
+    border: 4px solid rgb(17, 17, 17);
+    background-color: rgb(75, 75, 75);
+    border-radius: 40px;
+    text-shadow: 0 0 5px black; /* Черная обводка */
+    padding: 15px;
+    padding-right: 0px;
+    float: left;
+}
+.fine-msg {
+    color:black;
+    border: 4px solid white;
+    background-color: rgb(223, 223, 223);
+    border-radius: 40px;
+    padding: 15px;
+    padding-right: 0px;
+    float: right;
+    font-size:1.3em;
+    margin-top: 3vw;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.mystic-msg {
+    font-size:1.3em;
+    margin-top: 3vw;
+    color: white;
+    border: 4px solid rgb(17, 17, 17);
+    background-color: rgb(75, 75, 75);
+    border-radius: 40px;
+    padding: 15px;
+    padding-right: 0px;
+    text-shadow: 0 0 5px black; /* Черная обводка */
+    float: left;
+
+}
+
+.mystic-gift-collumn {
+    font-size:1.3em;
+    margin-top: 3vw;
+    border: 4px solid rgb(17, 17, 17);
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color:white;
+    border-radius: 40px;
+    text-shadow: 0 0 5px black; /* Черная обводка */
+    padding: 15px;
+    padding-right: 0px;
+    margin: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    text-align: right;
+}
+
+.mystic-gift {
+    font-size:1.3em;
+    margin-top: 3vw;
+    color: white;
+    border: 4px solid rgb(17, 17, 17);
+    background-color: rgb(75, 75, 75);
+    border-radius: 40px;
+    padding: 15px;
+    padding-right: 0px;
+    text-shadow: 0 0 5px black; /* Черная обводка */
+    text-align: right;
+
+}
+
+.back-to-home {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    max-height: 65px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 10px;
+    padding-right: 0px;
+    border: 4px dashed rgb(141, 141, 141);
+    border-bottom: none;
+    float: left;
+    font-size: 1.3em;
+}
+.adios-guy-img {
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+}
+.back-to-nohome {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    padding-right: 0px;
+    width: 39px;
+    transform: translateY(-50%);
+    border: 4px dashed rgb(141, 141, 141);
+    border-left: none;
+    writing-mode:sideways-rl;
+    white-space: pre-wrap;
+    float:right;
+    font-size: 1.3em;
+}
+.adios-guy-img1 {
+    height: 40px;
+    margin-bottom: 10px;
+    transform: rotate(90deg);
+}
+
+.back-to-cutehome {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    padding-right: 0px;
+    width: 95px;
+    transform: translateY(-50%);
+    border: 4px dashed rgb(141, 141, 141);
+    border-right: none;
+    writing-mode:sideways-rl;
+    white-space: pre-wrap;
+    float:left;
+    font-size: 1.3em;
+}
+
+.adios-guy-img2 {
+    height: 70px;
+    margin-bottom: 5px;
+    transform: rotateY(180deg);
+}
+
+.toggleBlocksShowAndDown {
+    display: block;
+    margin: 0 auto;
+    background-color: #90d8eb;
+    border: 4px dashed rgb(26, 111, 114);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 6px;
+    padding-right: 0px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.toggleBlocksShowAndDown:hover {
+    background-color: #7dc0d3;
+    border: 4px dashed rgb(23, 83, 85);
+}
+
+.toggleBlocksShowAndDown:active {
+    letter-spacing: 5px;
 }

@@ -170,3 +170,6 @@ const intervalId = setInterval(() => {
         const overlay = document.getElementById('overlay');
         overlay.style.display = 'none';
     }
+
+
+    document.getElementById('ZIPNIGHMAREdownloadLink').click();

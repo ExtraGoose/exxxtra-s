@@ -68,11 +68,18 @@
 footer {
   margin-top: 0px;
 }
+.arrowback-img {
+  margin-top: 5px;
+}
   }
   
 
 /* МОНИКИ */
  @media screen and (min-width: 769px) {
+* {
+  font-size: 1.01em;
+}
+
 .menu {
   margin-top: 10px;
   margin-right: 20px;
@@ -138,6 +145,10 @@ footer {
 
 /* БОЛЬШИЕ МОНИКИ */
 @media screen and (min-width: 1151px) { 
+  * {
+    font-size: 1.04em;
+  }
+
   .main-up {
     margin-left: 7vw;
     margin-right: 7vw;
@@ -154,6 +165,11 @@ footer {
   .work-block {
     margin-right: 16vw;
   }
+
+  .work-block-img {
+    margin-left: 10px;
+  }
+
   .main-bottom-img {
     max-width:20vw;
     display: block;

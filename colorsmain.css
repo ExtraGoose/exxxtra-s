@@ -152,6 +152,17 @@ hr {
     color: #000000;
 }
 
+.work-block-undertitle {
+    background-color: #dfdfdf;
+    color: #000000;
+}
+
+
+.work-marks-and-btn-cont-img {
+    background-color: rgb(226, 226, 226);
+    color: #000000;
+}
+
 .work-block-mark-1 {
     border: 2px solid #000000;
 }
@@ -169,11 +180,34 @@ hr {
     border: 4px solid black;
 }
 .work-block-colormark {
-    background-color: #dbdbdb;
+    background-color: #b8b8b8;
     color: #000000;
 }
 
 .work-block-colormark-2 {
-    background-color: #dbdbdb;
+    background-color: #b8b8b8;
     color: #000000;
+}
+
+.main-block-leftfloat {
+    background-color: #eeeeee;
+    border: 3px dotted #969696;
+}
+
+#decrease-btn:hover {
+    color: #000000;
+}
+
+#increase-btn:hover {
+    color: #000000;
+}
+
+.main-block-leftfloat:hover {
+    background-color: #b8b8b8;
+}
+
+#popupwindowbtn {
+    color: #000000;
+    background-color: #eeeeee;
+    border: 3px solid #000000;
 }

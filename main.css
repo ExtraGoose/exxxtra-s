@@ -142,7 +142,7 @@ main {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    border-radius: 10px; /* Добавим закругление углов рамки */
+    border-radius: 30px; /* Добавим закругление углов рамки */
     padding: 20px; /* Уменьшим отступ для рамки вокруг блока */
     margin: 25px; /* Добавим margin для создания внутренних отступов */
     flex-direction: column;
@@ -269,26 +269,52 @@ details > summary::marker {
     height: 100%;
     width: auto;
     line-height: 30px;
-    border-radius: 5px;
+    border-radius: 40px;
 }
 
 .work-block-title {
-    margin: 5px;
-    font-size: 1.2em;
-    margin-left: 13px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-size: 1.23em;
+    margin-left: 18px;
+}
+
+.work-block-undertitle {
+    display: inline-block;
+    padding: 5px;
+    font-size: 0.8em;
+    margin-left: 17px;
+    margin-right: 17px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.work-marks-and-btn-cont {
+    height: 100%;
+    width: auto;
+    border-radius: 40px;
+}
+
+.work-marks-and-btn-cont-img {
+    height: 100%;
+    width: auto;
+    border-radius: 40px;
 }
 
 .work-block-desc {
-    margin: 5px;
-    margin-left: 13px;
+    margin: 10px;
+    margin-left: 17px;
     line-height: 3vh;
     font-size: 1.07em;
     margin-bottom: 15px;
 }
 
 .work-block-marks {
-    margin: 5px;
-    margin-bottom: 10px;
+    margin: 13px;
+    margin-top: 5px;
+    margin-bottom: 18px;
 }
 
 .work-block-img {
@@ -331,14 +357,15 @@ details > summary::marker {
     border: 2px solid black;
     margin-bottom: 15px;
     margin-right: 15px;
-    border-radius: 30%;
+    border-radius: 35%;
     width: 52px;
     height: 52px;
 }
 
 .work-block-btn-inside-img {
-    width: 37px;
-    height: 37px;
+    width: 35px;
+    height: 35px;
+    margin: -10px;
 }
 
 .work-marks-and-btn-cont {
@@ -346,28 +373,32 @@ details > summary::marker {
   flex-flow:nowrap;
 }
 
+.work-marks-and-btn-cont-img {
+    display: flex;
+    flex-flow:nowrap;
+    overflow: hidden;
+  }
+
 .popup-window {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 20px;
+    width: 80%;
+    padding: 15px;
     border-radius: 25px;
     text-align: center;
     z-index: 10000;
 }
 
 .popup-window-text {
-    margin-left: 15px;
-    margin-right: 15px;
     font-size: larger;
 }
 
 .work-block-colormark {
     position: absolute;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     border-radius: 8px;
     border: none;
@@ -376,7 +407,7 @@ details > summary::marker {
 
 .work-block-colormark-2 {
     position: absolute;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     border-radius: 8px;
     border: none;
@@ -392,4 +423,40 @@ details > summary::marker {
     border: none;
     cursor: pointer;
     margin-left:-2%;
+}
+
+.artistic-text {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.main-block-leftfloat {
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 1vw;
+    text-align: center;
+    border-radius: 150px;
+    height: 45px;
+    width: 45px;
+}
+
+#popupwindowbtn {
+    border-radius: 13px;
+    padding: 6px;
+}
+
+.arrowback-img {
+    height: 30px;
+    width: 30px;
+}
+
+.art-info-btn {
+    float: left;
+    margin-left:20px;
+    height: 45px;
+    width: 80px;
 }

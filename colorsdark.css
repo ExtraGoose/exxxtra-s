@@ -42,6 +42,11 @@
     border: 2px solid #f8f8f8;
 }
 
+.work-marks-and-btn-cont-img {
+    background-color: #272727;
+    color: #f8f8f8;
+}
+
 .header-img {
     filter: invert(100%);
 }
@@ -65,6 +70,10 @@
 }
 
 .work-block-img {
+    filter: invert(100%);
+}
+
+.arrowback-img {
     filter: invert(100%);
 }
 
@@ -176,6 +185,11 @@ hr {
     color: #f8f8f8;
 }
 
+.work-block-undertitle {
+    color: #f8f8f8;
+    background-color: #353535;
+}
+
 .work-block-mark-1 {
     border: 2px solid #f8f8f8;
 }
@@ -202,3 +216,27 @@ hr {
     background-color: #494949;
     color: #f8f8f8;
 }
+
+.main-block-leftfloat {
+    background-color: #3a3a3a;
+    border: 3px dotted #b8b8b8;
+}
+
+#decrease-btn:hover {
+    color: #f8f8f8;
+}
+
+#increase-btn:hover {
+    color: #f8f8f8;
+}
+
+.main-block-leftfloat:hover {
+    background-color: #616161;
+}
+
+#popupwindowbtn {
+    color: #f8f8f8;
+    background-color: #2e2b2b;
+    border: 3px solid #f8f8f8;
+}
+
