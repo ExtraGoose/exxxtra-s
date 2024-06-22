@@ -77,6 +77,50 @@
     filter: invert(100%);
 }
 
+.zovichok-meet140 {
+    filter: invert(100%);
+}
+
+.upperarrowup-img {
+    filter: invert(100%);
+}
+
+.zovichok-meet140-mid {
+    filter: invert(100%);
+}
+
+.zovichok-meet140-high {
+    filter: invert(100%);
+}
+
+.zovichok-meet {
+    filter: invert(100%);
+}
+
+.point-of-interest {
+    filter: invert(100%);
+}
+
+.neromybeloved-img-fon {
+    background-color: #272727;
+    border-radius: 15px;
+}
+
+.btn-that-hunt-devils {
+    border: 2px solid white;
+    color: #f8f8f8;
+    background-color: #111111;
+    border-radius: 10px;
+}
+
+.main-up-second-lowerbottom {
+    background-color: #272727;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+
 .header-header {
     background-color: #252525;
     color: #f8f8f8;
@@ -104,6 +148,12 @@ footer {
 
 main {
     border: 1px solid #a0a0a0;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        border: none;
+    }
 }
 
 .main-block-bottom {

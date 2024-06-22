@@ -1,0 +1,307 @@
+/* АХАХПХАХАХ ЭТО ВСЁ НОВЫЙ КОДИК :3 */
+
+@font-face {
+  font-family: "Handmew";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../Pangolin-Regular.ttf);
+}
+
+.newview-polotno {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+}
+
+.newview {
+  padding: 12px;
+  padding-right:8px;
+  padding-top:6px;
+  background-color: #222;
+  color:white;
+  z-index: 100;
+  position: fixed;
+  left:0;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: Handmew;
+  font-size: 0.85em;
+  border-bottom: 10px dashed rgb(42, 223, 255);
+}
+
+.newview-2 {
+  padding: 12px;
+  padding-right:8px;
+  padding-top:6px;
+  background-color: #222;
+  color:white;
+  z-index: 100;
+  position: fixed;
+  left:0;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: Handmew;
+  font-size: 0.85em;
+  border-bottom: 10px dashed rgb(42, 223, 255);
+}
+
+.newview-3 {
+  padding: 12px;
+  padding-right:8px;
+  padding-top:6px;
+  background-color: #222;
+  color:white;
+  z-index: 100;
+  position: fixed;
+  left:0;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: Handmew;
+  font-size: 0.85em;
+  border-bottom: 10px dashed rgb(42, 223, 255);
+}
+
+.newview-text {
+  margin-top: 5px;
+}
+
+.newview-next-button {
+  display: flex;
+  flex: 1;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: #000000;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  border: 2px solid white;
+  font-size: 0.85em;
+}
+
+.newview-next-next-button {
+  display: flex;
+  flex: 1;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: #000000;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  border: 2px solid white;
+  font-size: 0.85em;
+}
+
+.newview-button {
+  display: flex;
+  flex: 1;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: #000000;
+  color:white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  border: 2px solid white;
+  font-size: 0.85em;
+}
+
+.newview-footer {
+  padding: 12px;
+  padding-right:8px;
+  background-color: #222;
+  color:white;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: Handmew;
+  font-size: 0.85em;
+  border-top: 10px dashed rgb(69, 116, 124);
+}
+
+.newview-footer-button {
+  padding: 12px;
+  padding-right:8px;
+  background-color: #222;
+  color:white;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: Handmew;
+  margin-top: 50px;
+  font-size: 0.85em;
+}
+
+.newview-footer-button-img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.snowflake {
+  color: #d1fdff;
+  font-size: 2em;
+  line-height: 1;
+  display: inline-block;
+  margin: 0 2px;
+  position: fixed;
+  animation: fall 5s linear infinite; /* Add animation for falling */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  z-index: 95;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(-10vh);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
+}
+/*Общее*/
+header, footer, main {
+  display: block;
+}
+
+.newview-text {
+  color: white;
+  text-align: left;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    cursor: default;
+    color: #000000;
+}
+
+body {
+  background-color: rgb(99, 231, 244);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 30px; 
+  position: relative;
+  font-family:Handmew;
+}
+
+.substain {
+  background-image: url(fone2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .substain {
+    background-image: url(fone2.png);
+    background-repeat: no-repeat;
+    background-size: 400% 100%;
+  }
+}
+
+.substain .hr-header-block-1  {
+  background-color:rgb(99, 231, 244);
+}
+
+.point-of-interest {
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+}
+
+/* Части Сайта */
+
+.header {
+    border-radius: 1%;
+    background-color: #708577;
+    margin: 3vh 0vh;
+    margin-bottom: 2vh;
+    padding: 3%;
+    height: fit-content;
+    font-size: 40px; 
+}
+
+footer {
+    margin-top: auto;
+    background-color: #708577;
+    padding: 2% 2% 2% 3%;
+    line-height: 30px;
+    font-size: 30px; 
+    color: rgb(55, 85, 85);
+
+}
+
+.footer-right {
+    margin-top: 20px;
+    display: block;
+    float: right;
+    line-height: 30px;
+    z-index: 99;
+    font-size: 30px; 
+    color: rgb(55, 85, 85);
+}
+
+
+
+/* Первичные Блоки */
+
+.block-1 {
+  background-color: #708577;
+  margin: 3vh 0vh;
+  padding: 3%;
+  font-size: 30px; 
+}
+
+.mess {
+  border-radius: 3%;
+  background-color: #5d7264;
+  padding: 2%;
+  text-align: center;
+  display:block;
+  max-width: 80%;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hr-header-block-1 {
+  color: #7a8a7e;
+  min-height: 1.3vh;
+  background-color: #4b6451;
+  border: 0px;
+  border-radius: 0px;
+}
+

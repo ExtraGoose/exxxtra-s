@@ -6,6 +6,43 @@
     src: url(Pangolin-Regular.ttf);
 }
 
+.freackin-tilt-left {
+    transform: rotate(-2deg);
+    transition: transform 0s;
+}
+
+.point-of-interest {
+    opacity: 0.1;
+}
+
+.point-of-interest:hover {
+    opacity: 1;
+}
+
+.point-of-interest:active {
+    opacity: 1;
+}
+
+/* ЛОУ-КЕЙ ТРЯСКА : */
+
+@keyframes shake {
+    0% { transform: translate(0),rotate(-2deg); }
+    10%, 30%, 50%, 70%, 90% { transform: translate(-20px, 20px); }
+    20%, 40%, 60%, 80%, 100% { transform: translate(20px, -20px); }
+}
+
+.whole-mf-page-shake {
+    animation: shake 0.4s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(-180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 * {
     font-family: Handmew;
 }
@@ -195,6 +232,29 @@ main {
     border: none;
 }
 
+.neromybeloved-img {
+    max-width: 200px;
+    width: 30%;
+    margin: 0 auto;
+    flex:1;
+    border-radius: 15px;
+}
+
+.zovichok-meet140 {
+    width: auto;
+    max-width: 100px;
+    max-height: 110px;
+    flex:1;
+}
+
+.btn-that-hunt-devils {
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
 .hidden {
     display: none;
 }
@@ -210,11 +270,19 @@ details > summary::marker {
 
 .main-tablehopper-svg {
     height: auto;
+    max-width: 16vh;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+/* .main-tablehopper-svg {
+    height: auto;
     max-width: 15vh;
     margin-top: 2vh;
     margin-bottom: 5vh;
     float: left;
-}
+} */
 
 .main-tablehopper-first {
     display: block;
@@ -225,23 +293,27 @@ details > summary::marker {
 
 .main-tablehopper-second {
     display: block;
-    margin-top: 28vh;
+    margin-top: 29.5vh;
     margin-left: 20vh;
 }
 
 .main-tablehopper-thirth {
     display: block;
     float: left;
-    margin-top: 14vh;
+    margin-top: 16vh;
     margin-left: 2vh;
+}
+
+.main-tablehopper-first-c {
+    font-size: 1.2rem;
 }
 
 .text-in-ramka {
     margin-left: 2vw;
     margin-right: 4vw;
-    font-size: medium;
+    font-size: 20px;
     text-align: center;
-    line-height: 17px;
+    line-height: 22px;
     border: 1.3px solid rgb(122, 122, 122);
     padding: 10px;
     border-radius: 15px;
@@ -269,7 +341,7 @@ details > summary::marker {
     height: 100%;
     width: auto;
     line-height: 30px;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .work-block-title {
@@ -288,7 +360,8 @@ details > summary::marker {
     letter-spacing: 2px;
     border-radius: 10px;
     text-align: left;
-    margin-top: 0px;
+    margin-top: 5px;
+    line-height: 19px;
 }
 
 .work-marks-and-btn-cont {
@@ -300,13 +373,13 @@ details > summary::marker {
 .work-marks-and-btn-cont-img {
     height: 100%;
     width: auto;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .work-block-desc {
     margin: 10px;
     margin-left: 17px;
-    line-height: 3vh;
+    line-height: 26px;
     font-size: 1.07em;
     margin-bottom: 15px;
 }
@@ -393,7 +466,7 @@ details > summary::marker {
 }
 
 .popup-window-text {
-    font-size: larger;
+    font-size: 20px
 }
 
 .work-block-colormark {
@@ -460,3 +533,4 @@ details > summary::marker {
     height: 45px;
     width: 80px;
 }
+

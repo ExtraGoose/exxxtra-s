@@ -32,32 +32,35 @@
     font-size: 1.1em;
 }
 .main-up-second-bottom {
-  font-size: large;
+  font-size: 1.1em;
 }
 .main-tablehopper-svg {
-  max-width: 12vh;
+  max-width: 13vh;
+  margin-left: 3.5%;
 }
 .main-tablehopper-first {
-  margin-top: 6.5vh;
+  margin-top: 7.5vh;
 }
 .main-tablehopper-second {
-  margin-top: 23vh;
-  margin-left: 14vh;
+  margin-top: 25vh;
+  margin-left: 18vh;
 }
 .main-tablehopper-thirth {
-  margin-top: 9.5vh;
+  margin-top: 11vh;
 }
 .neromybeloved-img {
-  width: 32.5vw;
   margin: 0 auto;
-  margin-left: 1vw;
+  max-width: 200px;
+  width: 49%;
+  border-radius: 15px;
 }
 .work-block {
   margin-left: 1vw;
   margin-right: 1vw;
 }
 .main-bottom-img {
-  max-width:60vw;
+  max-width:200px;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -71,7 +74,12 @@ footer {
 .arrowback-img {
   margin-top: 5px;
 }
-  }
+main {
+  padding: 10px; /* Уменьшим отступ для рамки вокруг блока */
+  margin: 10px; /* Добавим margin для создания внутренних отступов */
+}
+}
+
   
 
 /* МОНИКИ */
@@ -105,11 +113,11 @@ body {
   margin-right: 50%;
 }
 .main-up-second {
-  font-size: larger;
+  font-size: 1.1em;
 }
 
 .main-up-second-bottom {
-  font-size: larger;
+  font-size: 1.1em;
 }
 .main-up {
   margin-left: 3%;
@@ -122,9 +130,9 @@ body {
   margin-left: 3vh;
 }
 .neromybeloved-img {
-  width: 25vw;
   padding: 7px;
-  padding-left: 11px;
+  max-width: 200px;
+  width: 49%;
 }
 .work-block {
   margin-right: 18vw;
@@ -158,9 +166,7 @@ footer {
     margin-right: 8vw;
   }
   .neromybeloved-img {
-    width: 25vw;
     padding: 7px;
-    padding-left: 11px;
   }
   .work-block {
     margin-right: 16vw;
