@@ -59,7 +59,7 @@
     border-radius: 15px 15px 15px 15px;
     cursor: pointer;
     min-width: 10vw;
-    font-size: 1.02em;
+    font-size: 25px;
     position: relative;
     float: right;
 }
@@ -84,7 +84,7 @@
     text-align: left;
     border: none;
     background-color: transparent;
-    font-size: 1.1em;
+    font-size: 22px;
     cursor:pointer;
 }
 
@@ -97,7 +97,7 @@
     padding: 10px 15px;
     border-radius: 15px 15px 15px 15px;
     min-width: 10vw;
-    font-size: 1.1em;
+    font-size: 22px;
     position: relative;
 }
 
@@ -112,7 +112,7 @@
 .header-hide {
     padding: 10px 15px;
     min-width: 10vw;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .header-img {
@@ -194,16 +194,16 @@ main {
     margin-left: 1vw;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: x-large;
+    font-size: 25px;
     border-radius: 15px;
 }
 
-.main-up-first-right {
+/* .main-up-first-right {
     margin-left: 1vw;
     margin-top: auto;
     margin-bottom: auto;
     font-size: x-large;
-}
+} */
 
 .main-up-second {
     margin-left: 1vw;
@@ -225,8 +225,8 @@ main {
     text-align: left;
     margin-right: 7vw;
     float: right;
-    font-size: small;
-    letter-spacing: 0.12vw;
+    font-size: 15px;
+    letter-spacing: 0.2vw;
 }
 .mail-button {
     border: none;
@@ -305,7 +305,7 @@ details > summary::marker {
 }
 
 .main-tablehopper-first-c {
-    font-size: 1.2rem;
+    font-size: 21px;
 }
 
 .text-in-ramka {
@@ -347,14 +347,14 @@ details > summary::marker {
 .work-block-title {
     margin-top: 8px;
     margin-bottom: 3px;
-    font-size: 1.23em;
+    font-size: 26px;
     margin-left: 18px;
 }
 
 .work-block-undertitle {
     display: inline-block;
     padding: 5px;
-    font-size: 0.8em;
+    font-size: 17px;
     margin-left: 17px;
     margin-right: 17px;
     letter-spacing: 2px;
@@ -380,7 +380,7 @@ details > summary::marker {
     margin: 10px;
     margin-left: 17px;
     line-height: 26px;
-    font-size: 1.07em;
+    font-size: 23px;
     margin-bottom: 15px;
 }
 
@@ -402,7 +402,7 @@ details > summary::marker {
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
-    font-size: 1.02em;
+    font-size: 20px;
 }
 
 .work-block-mark-2 {
@@ -410,7 +410,7 @@ details > summary::marker {
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
-    font-size: 1.02em;
+    font-size: 20px;
 }
 
 .work-block-mark-3 {
@@ -418,7 +418,7 @@ details > summary::marker {
     padding-left: 5px;
     padding-right: 5px;
     margin: 5px;
-    font-size: 1.02em;
+    font-size: 20px;
 }
 
 .work-block-btn {

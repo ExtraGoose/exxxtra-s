@@ -1,7 +1,7 @@
 /* МОБИЛЫ */
 @media screen and (max-width: 768px) {
     body {
-      font-size: 1.2rem; /* Уменьшаем размер шрифта на маленьких экранах */
+      font-size: 1rem; /* Уменьшаем размер шрифта на маленьких экранах */
     }
     .header-header {
       margin-bottom: 15px;
@@ -18,21 +18,21 @@
   }
   .main-up-first {
     text-align: center;
-    font-size: larger;
+    font-size: 20px;
     padding: 7px;
 }
 .main-up-first-right {
   text-align: center;
-  font-size: larger;
+  font-size: 20px;
 }
 
 .main-up-second {
     margin-left: 1vw;
     margin-top: auto;
-    font-size: 1.1em;
+    font-size: 20px;
 }
 .main-up-second-bottom {
-  font-size: 1.1em;
+  font-size: 20px;
 }
 .main-tablehopper-svg {
   max-width: 13vh;
@@ -85,7 +85,7 @@ main {
 /* МОНИКИ */
  @media screen and (min-width: 769px) {
 * {
-  font-size: 1.01em;
+  font-size: 1.05em;
 }
 
 .menu {
@@ -113,11 +113,11 @@ body {
   margin-right: 50%;
 }
 .main-up-second {
-  font-size: 1.1em;
+  font-size: 22px;
 }
 
 .main-up-second-bottom {
-  font-size: 1.1em;
+  font-size: 22px;
 }
 .main-up {
   margin-left: 3%;
@@ -154,7 +154,7 @@ footer {
 /* БОЛЬШИЕ МОНИКИ */
 @media screen and (min-width: 1151px) { 
   * {
-    font-size: 1.04em;
+    font-size: 1.05em;
   }
 
   .main-up {

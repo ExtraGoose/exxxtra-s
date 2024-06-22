@@ -1,0 +1,23 @@
+.point-of-interest-msg {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 119999;
+}
+.point-of-interest-polotno {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 119998;
+}
+.point-of-interest-msg-img {
+    width: 125%;
+    min-width: 100%;
+    height: auto;
+}
