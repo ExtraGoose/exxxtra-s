@@ -144,14 +144,12 @@ if (zipimager && zipimagechanger) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.btn-that-hunt-devils').addEventListener('click', function() {
-        var zovichokImg = document.querySelector('.zovichok-meet140');
-        var neromyImg = document.querySelector('.neromybeloved-img');
-        var neromyImg2 = document.querySelector('.neromybeloved2-img');
-        // остальной ваш код здесь
-    });
-  
-  if (zovichokImg.style.display === 'none') {
+  document.querySelector('.btn-that-hunt-devils').addEventListener('click', function() {
+    var zovichokImg = document.querySelector('.zovichok-meet140');
+    var neromyImg = document.querySelector('.neromybeloved-img');
+    var neromyImg2 = document.querySelector('.neromybeloved2-img');
+    
+    if (zovichokImg && zovichokImg.style.display === 'none') {
       zovichokImg.style.display = 'block';
       neromyImg.style.display = 'none';
       neromyImg2.style.display = 'none';
@@ -161,7 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.upperarrowup-img').style.display = 'block';
       document.querySelector('.main-bottom-secret-text').style.display = 'block';
       document.querySelector('.main-bottom-text').style.display = 'none';
-  }
+    }
+  });
 });
 
 
