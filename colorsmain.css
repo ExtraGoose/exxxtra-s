@@ -102,6 +102,15 @@ main {
     }
 }
 
+.text-in-ramka-works {
+    border: 2px solid #333;
+    color: #000000;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+}
+
 .main-block-bottom {
     border: 1px solid #333;
 }
@@ -235,5 +244,11 @@ hr {
 #popupwindowbtn {
     color: #000000;
     background-color: #eeeeee;
-    border: 3px solid #000000;
+    border: 2px solid #000000;
+}
+
+#popupwindowbtn-two {
+    color: #000000;
+    background-color: #eeeeee;
+    border: 2px solid #000000;
 }

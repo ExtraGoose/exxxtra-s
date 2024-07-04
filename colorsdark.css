@@ -106,6 +106,15 @@
     border-radius: 15px;
 }
 
+.text-in-ramka-works {
+    border: 2px solid rgb(170, 170, 170);
+    color: #f8f8f8;
+    background-color: #292929;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+}
+
 .btn-that-hunt-devils {
     border: 2px solid white;
     color: #f8f8f8;
@@ -285,6 +294,11 @@ hr {
 #popupwindowbtn {
     color: #f8f8f8;
     background-color: #2e2b2b;
-    border: 3px solid #f8f8f8;
+    border: 2px solid #f8f8f8;
 }
 
+#popupwindowbtn-two {
+    color: #f8f8f8;
+    background-color: #2e2b2b;
+    border: 2px solid #f8f8f8;
+}

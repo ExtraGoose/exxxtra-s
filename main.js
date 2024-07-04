@@ -104,6 +104,28 @@ if (openBtn && popupwindowbtn && popup) {
   });
 }
 
+
+
+
+const openBtn3 = document.querySelector('.work-block-colormark-two');
+const popupwindowbtn3 = document.querySelector('#popupwindowbtn-two');
+const popup3 = document.querySelector('#popup-two');
+
+if (openBtn3 && popupwindowbtn3 && popup3) {
+  openBtn3.addEventListener('click', () => {
+    popup3.style.display = 'block';
+  });
+
+  popupwindowbtn3.addEventListener('click', () => {
+    popup3.style.display = 'none';
+  });
+}
+
+
+
+
+
+
   
 
 const zipimager = document.getElementById('zip-image');
@@ -121,10 +143,13 @@ if (zipimager && zipimagechanger) {
 
 
 
-document.querySelector('.btn-that-hunt-devils').addEventListener('click', function() {
-  var zovichokImg = document.querySelector('.zovichok-meet140');
-  var neromyImg = document.querySelector('.neromybeloved-img');
-  var neromyImg2 = document.querySelector('.neromybeloved2-img');
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.btn-that-hunt-devils').addEventListener('click', function() {
+        var zovichokImg = document.querySelector('.zovichok-meet140');
+        var neromyImg = document.querySelector('.neromybeloved-img');
+        var neromyImg2 = document.querySelector('.neromybeloved2-img');
+        // остальной ваш код здесь
+    });
   
   if (zovichokImg.style.display === 'none') {
       zovichokImg.style.display = 'block';
@@ -213,3 +238,40 @@ let interval = setInterval(function() {
   }
 }, 1000);
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.work-block-colormark-two').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'block';
+  });
+
+  document.querySelector('.popupwindowbtn-justclose-chose').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'none';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.work-block-colormark').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'block';
+  });
+
+  document.querySelector('.popupwindowbtn-justclose').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'none';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.art-info-btn').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'block';
+  });
+
+  document.querySelector('.popupwindowbtn-lana').addEventListener('click', function() {
+      document.querySelector('.point-of-interest-polotno').style.display = 'none';
+  });
+});
+
+
+
+

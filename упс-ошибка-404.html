@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Надежда из папье-маше</title>
+    </head>
+    <body>
+        <h1>УПС! :0</h1>
+        <h2>я думаю, что-то пошло не так!</h2>
+        <h3>пожалуйста, напишите в поддержку или подождите примерно:</h3>
+        <div id="timer"></div><br>
+        <a href="liberary.html">обратно в библеотеку</a>
+        <a href="index.html">обратно в главное меню</a>
+            
+    </body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            display: block;
+            font-size: 5rem; 
+            margin: 30px;
+            margin-right: 12px;
+            font-weight: bold;
+            
+        }
+        h2 {
+            display: block;
+            font-size: 3rem; 
+            margin: 30px;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+        h3 {
+            display: block;
+            font-size: 2.5rem; 
+            margin: 30px;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+        #timer {
+            display: block;
+            font-size: 2.5rem; 
+            margin: 30px;
+            margin-right: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        a {
+            display: block;
+            font-size: 2.5rem; 
+            margin: 30px;
+            margin-right: 12px;
+            line-height: 40px;
+        }
+    </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let timer = 2 * 60 * 60; // 2 hours in seconds
+        const timerElement = document.getElementById('timer');
+    
+        function updateTimer() {
+            timer += 2 * 60 * 60; // Add 2 hours in seconds
+            let hours = Math.floor(timer / 3600);
+    
+            timerElement.textContent = `${hours} рабочих часов...`;
+        }
+    
+        updateTimer(); // Display timer initially
+        setInterval(updateTimer, 3000); // Update timer every 3 seconds
+    });
+    </script>
+</html>
+
+
+
+
+
+
+
+
+

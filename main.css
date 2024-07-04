@@ -452,17 +452,28 @@ details > summary::marker {
     overflow: hidden;
   }
 
+.text-in-ramka-works {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 .popup-window {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    max-width: 80%;
     padding: 15px;
     border-radius: 25px;
     text-align: center;
-    z-index: 10000;
+    z-index: 119999;
 }
 
 .popup-window-text {
@@ -520,6 +531,13 @@ details > summary::marker {
 #popupwindowbtn {
     border-radius: 13px;
     padding: 6px;
+    margin-top: 10px;
+}
+
+#popupwindowbtn-two {
+    border-radius: 13px;
+    padding: 6px;
+    margin-top: 10px;
 }
 
 .arrowback-img {
