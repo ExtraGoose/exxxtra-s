@@ -3,6 +3,10 @@
     body {
       font-size: 1rem; /* Уменьшаем размер шрифта на маленьких экранах */
     }
+    
+    .footer-up {
+      font-size: 1.2rem;
+    }
     .header-header {
       margin-bottom: 15px;
       margin-right: auto;
@@ -79,7 +83,9 @@ main {
   margin: 10px; /* Добавим margin для создания внутренних отступов */
 }
 }
-
+.global-disclaimer-btn {
+  font-size: 1.5rem;
+}
   
 
 /* МОНИКИ */

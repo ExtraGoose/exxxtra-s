@@ -6,6 +6,53 @@
     src: url(Pangolin-Regular.ttf);
 }
 
+.global-disclaimer-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.global-disclaimer-site {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 250, 250);
+    padding: 15px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 9111111199;
+    border: 10px dashed rgb(160, 160, 160);
+}
+.global-disclaimer-li {
+    list-style-type: none;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-disclaimer-it {
+    background-color: rgb(226, 226, 226);
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.global-disclaimer-btn {
+    margin: 7px;
+    line-height: 26px;
+}
+
+
 .freackin-tilt-left {
     transform: rotate(-2deg);
     transition: transform 0s;
@@ -216,6 +263,11 @@ main {
     margin-top: auto;
 }
 
+.main-block-bottom-tiny {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 .footer-img {
     max-width: 60px;
     height: auto;
@@ -401,24 +453,21 @@ details > summary::marker {
     border-radius: 8px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .work-block-mark-2 {
     border-radius: 8px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .work-block-mark-3 {
     border-radius: 8px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .work-block-btn {
@@ -467,17 +516,28 @@ details > summary::marker {
     display: none;
     position: fixed;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 4%;
+    right: 0;
+    transform: translate(0, -50%);
     max-width: 80%;
     padding: 15px;
     border-radius: 25px;
     text-align: center;
     z-index: 119999;
+    @media (min-width: 768px) {
+        left: 0;
+        right: 0;
+        transform: translate(0, -50%);
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .popup-window-text {
-    font-size: 20px
+    font-size: 19px;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .work-block-colormark {

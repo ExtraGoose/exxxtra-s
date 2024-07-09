@@ -1,3 +1,42 @@
+// JavaScript
+document.addEventListener("DOMContentLoaded", function() {
+  const disclaimerOverlay = document.getElementById("global-disclaimer-overlay");
+  const disclaimerSite = document.getElementById("global-disclaimer-site");
+  const disclaimerBtn = document.querySelector(".global-disclaimer-btn");
+  const footerBtn = document.querySelector(".global-disclaimer-footer-btn");
+
+  disclaimerBtn.addEventListener("click", function() {
+      disclaimerOverlay.style.display = "none";
+      localStorage.setItem("disclaimerClosed", "true");
+  });
+
+  footerBtn.addEventListener("click", function() {
+      disclaimerOverlay.style.display = "block";
+      localStorage.removeItem("disclaimerClosed");
+      localStorage.setItem("disclaimerOpened", "true");
+  });
+
+  if (localStorage.getItem("disclaimerClosed")) {
+      disclaimerOverlay.style.display = "none";
+  } else if (localStorage.getItem("disclaimerOpened")) {
+      disclaimerOverlay.style.display = "block";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const disclaimerBtn = document.querySelector(".global-disclaimer-btn");
+
+  disclaimerBtn.addEventListener("click", function() {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  });
+});
+
+
+
+
 // Главная менюшка :D
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -268,6 +307,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelector('.popupwindowbtn-lana').addEventListener('click', function() {
       document.querySelector('.point-of-interest-polotno').style.display = 'none';
+  });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.funny-text-dontly').addEventListener('click', function() {
+    var currentText = document.querySelector('.funny-text-dontly');
+    var newText = document.querySelector('.sad-text-dontly');
+    
+    currentText.classList.add('hidden');
+    newText.classList.remove('hidden');
   });
 });
 
