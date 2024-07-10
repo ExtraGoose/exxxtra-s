@@ -36,6 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+const btndiscclaa = document.querySelector('.global-disclaimer-footer-btn');
+
+function changeColor() {
+  btndiscclaa.classList.toggle('style-tune-red');
+}
+
+setInterval(changeColor, 400);
+
+
+
+
+
 
 // Главная менюшка :D
 const menuBtn = document.querySelector('.menu-btn');
@@ -187,11 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var zovichokImg = document.querySelector('.zovichok-meet140');
     var neromyImg = document.querySelector('.neromybeloved-img');
     var neromyImg2 = document.querySelector('.neromybeloved2-img');
+    var neromyImgOne = document.querySelector('.neromybeloved-img-one');
+    var neromyImgTwo = document.querySelector('.neromybeloved-img-two');
     
     if (zovichokImg && zovichokImg.style.display === 'none') {
       zovichokImg.style.display = 'block';
       neromyImg.style.display = 'none';
       neromyImg2.style.display = 'none';
+      neromyImgOne.style.display = 'none';
+      neromyImgTwo.style.display = 'none';
       document.querySelector('.btn-that-hunt-devils').style.display = 'none';
       document.querySelector('.main-up-second-lowerbottom').style.display = 'none';
       document.querySelector('.upper-text-above-nero').style.display = 'none';

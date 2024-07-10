@@ -28,6 +28,7 @@
     font-size: 1.5rem;
     z-index: 9111111199;
     border: 10px dashed rgb(160, 160, 160);
+    color: black;
 }
 .global-disclaimer-li {
     list-style-type: none;
@@ -50,8 +51,67 @@
 .global-disclaimer-btn {
     margin: 7px;
     line-height: 26px;
+
 }
 
+.main-up-twosome {
+    display: grid;
+}
+
+.global-disclaimer-footer-btn {
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0s;
+    animation: stretch 4s infinite alternate;
+    display: inline-block;
+    transform-origin: center;
+}
+.style-tune-red {
+    color: red;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.10, 1.35);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes stretchty {
+    0% {
+        transform: scale(1, 1);
+    }
+    40% {
+        transform: scale(1, 1);
+    }
+    60% {
+        transform: scale(-1, -1);
+    }
+    100% {
+        transform: scale(-1, -1);
+    }
+}
+
+@keyframes stretchty-alt {
+    0% {
+        transform: scale(-1, -1);
+    }
+    40% {
+        transform: scale(-1, -1);
+    }
+    60% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
 
 .freackin-tilt-left {
     transform: rotate(-2deg);
@@ -290,6 +350,14 @@ main {
     margin: 0 auto;
     flex:1;
     border-radius: 15px;
+}
+
+.neromybeloved-img-one {
+    animation: stretchty 5s infinite alternate;
+}
+
+.neromybeloved-img-two {
+    animation: stretchty-alt 5s infinite alternate;
 }
 
 .zovichok-meet140 {
