@@ -341,4 +341,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+function animateButton() {
+  const buttonz = document.getElementById('targetDiv2');
+
+  // Пошатываем кнопку
+  buttonz.style.transform = 'translateX(-20px)';
+  setTimeout(() => {
+      buttonz.style.transform = 'translateX(20px)';
+  }, 200);
+  
+
+  // Упадет на самый низ страницы
+  setTimeout(() => {
+      buttonz.classList.add('fall');
+  }, 1000);
+}
+
 

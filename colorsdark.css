@@ -145,6 +145,11 @@ body {
     color: #f8f8f8;
 }
 
+a {
+    background-color: #181818;
+    color: #f8f8f8;
+}
+
 .global-disclaimer-footer-btn {
     color: #f8f8f8;
 }

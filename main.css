@@ -238,6 +238,23 @@
     border-radius: 13px;
 }
 
+.a-link-yonk {
+        display: inline-block; /* Для применения анимации */
+        cursor: pointer; /* Показываем, что текст кликабелен */
+    }
+
+.a-link-yonk:hover {
+    animation: shakeresta 0.5s infinite; /* Анимация при наведении */
+}
+
+@keyframes shakeresta {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 1px); }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(-1px, -1px); }
+}
+
 hr {
   margin-top: 2px;
   margin-bottom: 9px;  
