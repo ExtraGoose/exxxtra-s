@@ -16,6 +16,9 @@
     background-color: #161616;
     color: #fff;
 }
+.work-block-btn-inside-img {
+    background-color:#e9e9e9;
+}
 
 .menu-btn:hover {
     text-decoration: underline 1.6px wavy #8d8d8d;

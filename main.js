@@ -1,4 +1,3 @@
-// JavaScript
 document.addEventListener("DOMContentLoaded", function() {
   const disclaimerOverlay = document.getElementById("global-disclaimer-overlay");
   const disclaimerSite = document.getElementById("global-disclaimer-site");
@@ -21,31 +20,24 @@ document.addEventListener("DOMContentLoaded", function() {
   } else if (localStorage.getItem("disclaimerOpened")) {
       disclaimerOverlay.style.display = "block";
   }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-  const disclaimerBtn = document.querySelector(".global-disclaimer-btn");
+  const disclaimerBtnScroll = document.querySelector(".global-disclaimer-btn");
 
-  disclaimerBtn.addEventListener("click", function() {
+  disclaimerBtnScroll.addEventListener("click", function() {
       window.scrollTo({
           top: 0,
           behavior: "smooth"
       });
   });
+
+  const btndiscclaa = document.querySelector('.global-disclaimer-footer-btn');
+
+  function changeColor() {
+      btndiscclaa.classList.toggle('style-tune-red');
+  }
+
+  setInterval(changeColor, 400);
 });
-
-
-
-const btndiscclaa = document.querySelector('.global-disclaimer-footer-btn');
-
-function changeColor() {
-  btndiscclaa.classList.toggle('style-tune-red');
-}
-
-setInterval(changeColor, 400);
-
-
-
 
 
 
