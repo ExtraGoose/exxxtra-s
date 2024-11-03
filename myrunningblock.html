@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="poi.css">
+        <title>поймай его!!!</title>
+        <style>
+    * {
+        background-color: black;
+        color: white;
+        outline: none;
+    }
+    .block {
+        width: 100px;
+        height: 100px;
+        background-image: url('donotenter.jpg');
+        background-size: cover;
+        position: absolute;
+        cursor: pointer;
+    }
+    .hinty {
+        display: none;
+        color: white;
+        font-family: monospace;
+        font-size: 1.1rem;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    #id {
+        outline: none;
+    }
+        </style>
+    </head>
+    <body>
+        <div id="movingBlock"></div>
+        <div class="hint1 hinty">$ Воу, воу, полегче, чувак! Я не опасен. Я не знаю, как ты сюда попал.</div>
+        <div class="hint2 hinty">% Вероятно, это та аномалия, которая обычно проявляется, если кого-то сильно раздербанить в этих краях.</div>
+        <div class="hint3 hinty">% Но ты ведь ничего такого не делал, да? Смотри мне! </div>
+        <div class="hint4 hinty">% Лады, видишь дверь? Так вот она — ложная. Через неё один хрен ни за что не пройдёшь (Я пытался).</div>
+        <div class="hint5 hinty">% Да, тебе не послышалось. Через неё выхода — нет. Но вот есть одна тайная, но она на то и тайная, что просто так её не увидеть!</div>
+        <div class="hint6 hinty">% А чтобы найти её... Хм... Только вспомни: что тебя сюда привело? Или кто?</div>
+        <div class="hint7 hinty">% И просто позволь... Позволь себе написать это, и дверь тебя выпустит в миг!</div>
+
+        <div class="secretdoor" style="display: none;"><a href="secret-bibleoteca.html"><img src="doenter.jpg" alt="ВЫХОД" style="width: 100px;height: auto;" draggable="false"></a></div>
+    <script>
+const movingBlock = document.createElement('div');
+movingBlock.className = 'block';
+document.body.appendChild(movingBlock);
+
+let teleportCount = 0;
+
+function teleportBlock() {
+    let randomX = Math.floor(Math.random() * (window.innerWidth - 202)) + 101;
+    let randomY = Math.floor(Math.random() * (window.innerHeight - 202)) + 101;
+
+    movingBlock.style.left = `${randomX}px`;
+    movingBlock.style.top = `${randomY}px`;
+
+    teleportCount++;
+
+    if (teleportCount === 10) {
+        document.querySelector('.hint1').style.display = 'block';
+    }
+
+    if (teleportCount === 20) {
+        document.querySelector('.hint2').style.display = 'block';
+    }
+
+    if (teleportCount === 30) {
+        document.querySelector('.hint3').style.display = 'block';
+    }
+
+    if (teleportCount === 40) {
+        document.querySelector('.hint4').style.display = 'block';
+    }
+
+    if (teleportCount === 50) {
+        document.querySelector('.hint5').style.display = 'block';
+    }
+
+    if (teleportCount === 60) {
+        document.querySelector('.hint6').style.display = 'block';
+    }
+
+    if (teleportCount === 70) {
+        document.querySelector('.hint7').style.display = 'block';
+    }
+}
+
+teleportBlock();
+
+document.addEventListener('mousemove', (event) => {
+    const blockRect = movingBlock.getBoundingClientRect();
+    if (
+        event.clientX >= blockRect.left &&
+        event.clientX <= blockRect.right &&
+        event.clientY >= blockRect.top &&
+        event.clientY <= blockRect.bottom
+    ) {
+        teleportBlock();
+    }
+});
+
+movingBlock.addEventListener('click', () => {
+    teleportBlock();
+});
+
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
+
+const secretdoorBlock = document.querySelector('.secretdoor');
+let typedWord = '';
+let isInputFieldVisible = false;
+let inputField;
+
+// Слушаем событие keydown на клавиатуре
+document.addEventListener('keydown', (event) => {
+    // Добавляем нажатую клавишу к введенному слову
+    typedWord += event.key.toLowerCase();
+    
+    // Проверяем, если введенное слово соответствует "впусти" или "dgecnb"
+    if (typedWord.includes('Синий') || typedWord.includes('Cbybq') || typedWord.includes('синий') || typedWord.includes('cbybq') || typedWord.includes('блок') || typedWord.includes(',kjr') || typedWord.includes('Блок') || typedWord.includes('<kjr')) {
+        secretdoorBlock.style.display = 'block'; // Показываем блок "secretdoor"
+        typedWord = ''; // Сбрасываем введенное слово
+    }
+});
+
+// Добавляем кнопку для открытия и скрытия клавиатуры на мобильных устройствах
+const toggleKeyboardButton = document.createElement('button');
+toggleKeyboardButton.textContent = 'Код';
+document.body.appendChild(toggleKeyboardButton);
+
+// Слушаем событие клика по кнопке для открытия и скрытия клавиатуры
+toggleKeyboardButton.addEventListener('click', () => {
+    if (isInputFieldVisible) {
+        document.body.removeChild(inputField); // Удаляем поле ввода
+        isInputFieldVisible = false;
+    } else {
+        openKeyboard(); // Открываем клавиатуру
+        isInputFieldVisible = true;
+    }
+});
+
+// Функция для открытия клавиатуры на мобильных устройствах
+function openKeyboard() {
+    inputField = document.createElement('input');
+    inputField.setAttribute('type', 'text');
+    document.body.appendChild(inputField);
+    inputField.focus(); // Фокусируемся на поле ввода
+}
+    </script>
+    </body>
+</html>
+

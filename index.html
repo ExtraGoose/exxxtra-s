@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="screens.css">
         <link rel="stylesheet" href="poi.css">
+        <script src="dark.js"></script>
         <title>топ страничка инета дамс</title>
     </head>
     <body>
@@ -76,6 +77,18 @@
                 <button class="global-disclaimer-btn">Лет'c Го!</button>
             </div>
         </div>
+
+        <script>
+const img = document.querySelector('.main-bottom-img');
+let clickCount = 0;
+
+img.addEventListener('click', () => {
+clickCount++;
+if (clickCount === 10) {
+window.location.href = 'hollway-main.html';
+}
+});
+        </script>
     </body>
 </html>
 

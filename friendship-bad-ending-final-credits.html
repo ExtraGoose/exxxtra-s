@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="poi.css">
+        <title>дружба — это депрессия</title>
+    </head>
+    <body>
+        <div class="click-help" style="color: rgb(82, 82, 82);font-size: large;float: right;margin-right: 3vw;"><- клик</div>
+        <div class="clicktosee">"Не вернут"
+        <div class="text">Как это понимать?</div>
+        <div class="text">Это неправильно.</div>
+        <div class="text">Это нереально.</div>
+        <div class="text">Это всё ложь.</div>
+        <div class="text">. . .</div>
+        <div class="text">. . . .</div>
+        <div class="text">. . . . .</div>
+        <div class="text">Прости меня, Синий.</div>
+        <div class="text">Я не хотел, чтобы всё так закончилось.</div>
+        <div class="text">Я просто... Ах. Нет, я ничего уже не смогу поделать.</div>
+        <div class="text">Только... Можеть быть...</div><br>
+        <div class="text">
+            <a href="friendship-bad-ending-final-credits-suicide.html">Дать тьме поглотить себя...</a><br><br>
+            <a href="friendship-bad-ending-final-credits-suicide.html">В последний раз вздохнуть...</a><br><br>
+            <a href="friendship-bad-ending-final-credits-suicide.html">Окончить свои страдания...</a><br><br>
+            <a href="friendship-bad-ending-final-credits-suicide.html">Покинуть мир навсегда...</a><br><br><br>
+            <a href="friendship-bad-ending-final-credits-mercy.html">...Пощадить себя.</a><br><br><br>
+        </div>
+    </div>
+
+        <style>
+            * {
+                background-color: black;
+                color: rgb(224, 224, 224);
+                font-family: monospace;
+                font-size: 1.1rem;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                margin-bottom: 10px;
+            }
+            .clicktosee {
+                margin-left: 20vw;
+                margin-top: 10vw;
+            }
+            .text {
+                display: none;
+                margin-top: 2vw;
+            }
+        </style>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const clickToSee = document.querySelector('.clicktosee');
+    const clickHelp = document.querySelector('.click-help');
+    const texts = document.querySelectorAll('.text'); // Выбрать все блоки с классом "text"
+    let index = 0; // Индекс текущего отображаемого блока
+    let isAnimating = false; // Флаг для отслеживания анимации
+
+    clickToSee.addEventListener('click', function() {
+        if (!isAnimating && index < texts.length) {
+            isAnimating = true;
+            fadeIn(texts[index]); // Постепенно показать следующий блок
+            setTimeout(function() {
+                isAnimating = false;
+                index++; // Увеличить индекс для следующего блока
+            }, 1200); // Дополнительная задержка в 1.5 секунды
+
+            // Скрыть блок "click-help"
+            clickHelp.style.display = 'none';
+        }
+    });
+
+    function fadeIn(element) {
+        element.style.display = 'block'; // Показать блок
+        element.style.opacity = 0; // Установить начальную прозрачность
+        let opacity = 0;
+        let timer = setInterval(function() {
+            if (opacity >= 1) {
+                clearInterval(timer);
+            }
+            element.style.opacity = opacity;
+            opacity += 0.01; // Увеличить прозрачность постепенно
+        }, 10); // Изменять прозрачность каждые 10 миллисекунд
+    }
+});
+</script>
+        <script src="main.js"></script>
+        <script src="poi.js"></script>
+    </body>
+</html>
+

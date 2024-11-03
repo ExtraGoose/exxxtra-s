@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="poi.css">
+        <title>чаёвничать — клёво</title>
+    </head>
+    <body>
+    <img src="table-whole-place.png" alt="" class="table" draggable="false">
+    <div class="text">— Хей! А ну, всем спокойно!</div>
+    <div class="text text2">Не хватало мне ещё одной драки.</div>
+    <div class="text text3">Тем более, тут же Человек!</div>
+    <div class="text text4">Ребят, окажите мне услугу: давайте на этот часик позабудем о всех глупостях и обидах, что нас окружают...</div><br>
+    <div class="text text5">...И попьём чайку ;)</div>
+
+    <a class="table-button" href="friendship-good-endline.html">— Да начнётся застолье!</a>
+<style>
+.table {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.text {
+    margin: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+body {
+    background-color: rgb(255, 241, 216);
+}
+a {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-family: monospace;
+}
+a:visited {
+    color: rgb(19, 19, 19);
+}
+* {
+    font-family:monospace;
+    font-size: 1.05rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+body {
+    opacity: 0; /* Начать с нулевой прозрачности */
+    animation: fadeIn 3s forwards; /* Применить анимацию с изменением прозрачности в течение 2 секунд */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text2, .text3, .text4, .text5, .table-button {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.text2.show, .text3.show, .text4.show, .text5.show, .table-button.show {
+  opacity: 1;
+}
+.table-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ddc4a2; /* светло-коричневый цвет */
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 250px;
+}
+        </style>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+     document.querySelector('.table').style.opacity = 1;
+
+     setTimeout(function() {
+       document.querySelector('.text2').classList.add('show');
+     }, 1000); // 500 миллисекунд = 0.5 секунды
+
+     setTimeout(function() {
+       document.querySelector('.text3').classList.add('show');
+     }, 2000); // 900 миллисекунд = 0.9 секунды
+
+     setTimeout(function() {
+       document.querySelector('.text4').classList.add('show');
+     }, 3000); // 500 миллисекунд = 0.5 секунды
+
+     setTimeout(function() {
+       document.querySelector('.text5').classList.add('show');
+     }, 4800); // 500 миллисекунд = 0.5 секунды
+
+     setTimeout(function() {
+       document.querySelector('.table-button').classList.add('show');
+     }, 5800); // 500 миллисекунд = 0.5 секунды
+  }, 2000); // 4000 миллисекунд = 4 секунды
+});
+        </script>
+        <script src="main.js"></script>
+        <script src="poi.js"></script>
+    </body>
+</html>
+

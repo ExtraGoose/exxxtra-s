@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="poi.css">
+        <title>дружба — это бросить всё</title>
+    </head>
+    <body>
+        <div class="notebook">
+            <div class="line">Побег.</div>
+            <div class="line">Сбежал немой герой, оставив их одних,</div>
+            <div class="line">В досадной горечи ушёл, не попрощавшись.</div>
+            <div class="line">И сколько не ищи теперь ты их,</div>
+            <div class="line">Судьба останется забытой да провальной.</div>
+            <div class="line"> </div>
+            <div class="line">Был вскрик, был всхлип и горе,</div>
+            <div class="line">Был жуткий ужас на лицах ребят.</div>
+            <div class="line">Было последним тех виденьем</div>
+            <div class="line">Как ты вприпрыжку убегал.</div>
+            <div class="line"> </div>
+            <div class="line" style="bottom: 0;"><a href="about.html"><img src="broken-heart.png.png" alt="уйти" draggable="false"></a></div>
+        </div>
+        <style>
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+body {
+    background-color: black;
+    color: white;
+    animation: fadeIn 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+* {
+    color: black;
+    font-family: monospace;
+    font-size: 1.1rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+}
+.notebook {
+    background-color: #fffacd; /* Желтовато-белый цвет */
+    padding: 10px;
+    line-height: 1;
+    min-width: 200px;
+    width: auto;
+    min-height: 250px;
+    height: auto;
+    
+}
+.line {
+    background-image: repeating-linear-gradient(0deg, #d1cdad, #d1cdad, transparent 2px, transparent 20px);
+}
+@media screen and (max-width: 300px) {
+    .line {
+        background-image: repeating-linear-gradient(0deg, #d1cdad, #d1cdad 1px, transparent 2px, transparent 25px);
+        line-height: 1.25;
+}
+}
+        </style>
+        <script src="main.js"></script>
+        <script src="poi.js"></script>
+    </body>
+</html>
+
