@@ -122,40 +122,43 @@ let typedWord = '';
 let isInputFieldVisible = false;
 let inputField;
 
-// Слушаем событие keydown на клавиатуре
 document.addEventListener('keydown', (event) => {
-    // Добавляем нажатую клавишу к введенному слову
-    typedWord += event.key.toLowerCase();
-    
-    // Проверяем, если введенное слово соответствует "впусти" или "dgecnb"
-    if (typedWord.includes('Синий') || typedWord.includes('Cbybq') || typedWord.includes('синий') || typedWord.includes('cbybq') || typedWord.includes('блок') || typedWord.includes(',kjr') || typedWord.includes('Блок') || typedWord.includes('<kjr')) {
-        secretdoorBlock.style.display = 'block'; // Показываем блок "secretdoor"
-        typedWord = ''; // Сбрасываем введенное слово
+    // Ничего не делаем здесь, так как будем использовать поле ввода для ввода слов
+});
+
+document.addEventListener('input', (event) => {
+    if (event.target === inputField) {
+        typedWord = event.target.value.toLowerCase();
+        checkSecretWord();
     }
 });
 
-// Добавляем кнопку для открытия и скрытия клавиатуры на мобильных устройствах
 const toggleKeyboardButton = document.createElement('button');
 toggleKeyboardButton.textContent = 'Код';
 document.body.appendChild(toggleKeyboardButton);
 
-// Слушаем событие клика по кнопке для открытия и скрытия клавиатуры
 toggleKeyboardButton.addEventListener('click', () => {
     if (isInputFieldVisible) {
-        document.body.removeChild(inputField); // Удаляем поле ввода
+        document.body.removeChild(inputField);
         isInputFieldVisible = false;
     } else {
-        openKeyboard(); // Открываем клавиатуру
+        openKeyboard();
         isInputFieldVisible = true;
     }
 });
 
-// Функция для открытия клавиатуры на мобильных устройствах
 function openKeyboard() {
     inputField = document.createElement('input');
     inputField.setAttribute('type', 'text');
     document.body.appendChild(inputField);
-    inputField.focus(); // Фокусируемся на поле ввода
+    inputField.focus();
+}
+
+function checkSecretWord() {
+    if (typedWord.includes('синий') || typedWord.includes('cbybq') || typedWord.includes('блок') || typedWord.includes(',kjr')) {
+        secretdoorBlock.style.display = 'block';
+        typedWord = '';
+    }
 }
     </script>
     </body>
