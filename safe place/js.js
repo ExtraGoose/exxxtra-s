@@ -10,6 +10,7 @@
 //     triangle.style.position = 'fixed';
 //     triangle.style.left = `${getRandomNumber(0, window.innerWidth - 200)}px`;
 //     triangle.style.top = `${getRandomNumber(0, window.innerHeight - 200)}px`;
+//     triangle.style.opacity = '0.1'; // Прозрачность 90%
 
 //     // Добавляем треугольник на страницу
 //     document.body.appendChild(triangle);
@@ -17,7 +18,7 @@
 //     // Устанавливаем таймер для удаления треугольника через 10 секунд
 //     setTimeout(() => {
 //         triangle.remove();
-//     }, 100); // Удаляем через 10 секунд
+//     }, 300); // Удаляем через 10 секунд
 // }
 
 // function getRandomNumber(min, max) {
@@ -29,7 +30,7 @@
 // }
 
 // // Создаем новый треугольник каждую минуту
-// setInterval(createRandomTriangle, 1);
+// setInterval(createRandomTriangle, 100); // каждые 60 секунд
 
 
 
